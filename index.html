@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK InfoTech | Next-Gen IT Solutions & Managed Services</title>
+    <meta name="description"
+        content="UK InfoTech delivers premier IT consulting, cloud migrations, cyber security, custom software, and 24/7 managed IT support for businesses across the UK.">
+    <meta name="keywords"
+        content="UK InfoTech, UK IT Company, London IT Support, Managed IT Services, Cyber Security London, Cloud Solutions UK, IT Consulting">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070913'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='28' fill='%2306b6d4'%3EUK%3C/text%3E%3C/svg%3E">
+
+    <!-- Anti-Flash Theme Script -->
+    <script>
+        (function() {
+            try {
+                var savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    document.documentElement.className = savedTheme;
+                }
+            } catch (e) {}
+        })();
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ukinfotech.co.uk/">
+    <meta property="og:title" content="UK InfoTech | Next-Gen IT Solutions">
+    <meta property="og:description"
+        content="Premier UK-based IT consultancy and managed services. Empowering businesses through technology.">
+    <meta property="og:image" content="assets/uk-infotech-hero.png">
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="mainHeader">
+        <div class="container header-container">
+            <a href="#" class="logo" id="logoLink">
+                <span class="logo-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+                <span class="logo-text">UK <span class="logo-highlight">InfoTech</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active" id="navLinkHome">Home</a></li>
+                    <li><a href="#services" class="nav-link" id="navLinkServices">Services</a></li>
+                    <li><a href="#about" class="nav-link" id="navLinkAbout">Why Us</a></li>
+                    <li><a href="#tech-stack" class="nav-link" id="navLinkTech">Tech Stack</a></li>
+                    <li><a href="#portfolio" class="nav-link" id="navLinkPortfolio">Case Studies</a></li>
+                    <li><a href="#contact" class="nav-link" id="navLinkContact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon theme-icon-dark"></i>
+                    <i class="fa-solid fa-sun theme-icon-light"></i>
+                </button>
+                <a href="#contact" class="btn btn-secondary btn-header-cta" id="headerCtaBtn">Get Free Audit</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-wrapper">
+                    <span class="hero-badge"><i class="fa-solid fa-circle-dot badge-pulse"></i> London's Premier IT
+                        Partner</span>
+                </div>
+                <h1 class="hero-title">
+                    Empowering UK Businesses With <span class="gradient-text">Next-Gen IT</span> Solutions
+                </h1>
+                <p class="hero-description">
+                    UK InfoTech drives digital acceleration. We engineer scalable cloud infrastructure, fortify
+                    cyber security, and build bespoke software tailored to UK's leading enterprises.
+                </p>
+                <div class="hero-actions-group">
+                    <a href="#contact" class="btn btn-primary" id="heroPrimaryCta"><i
+                            class="fa-solid fa-calendar-check"></i> Book Consultation</a>
+                    <a href="#services" class="btn btn-outline" id="heroSecondaryCta">Explore Services <i
+                            class="fa-solid fa-arrow-right icon-arrow"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="99">0</span><span class="stat-plus">%</span>
+                        <p class="stat-label">SLA Uptime Guarantee</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="24">0</span><span class="stat-plus">/7</span>
+                        <p class="stat-label">UK Support Desk</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-graphic-container">
+                <div class="hero-image-wrapper">
+                    <div class="hero-circuit-bg"></div>
+                    <img src="assets/uk-infotech-hero.png" alt="UK InfoTech Digital Technology" class="hero-img"
+                        id="heroGraphicImg">
+                    <div class="glow-sphere sphere-1"></div>
+                    <div class="glow-sphere sphere-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Client Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee-title">Trusted By Leading Global Tech Ecosystems</div>
+            <div class="marquee-content">
+                <div class="marquee-track">
+                    <div class="marquee-logo"><i class="fa-brands fa-aws"></i> AWS Cloud Partner</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-microsoft"></i> Microsoft Solutions</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-google"></i> Google Cloud</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-docker"></i> Docker Enterprise</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-kubernetes"></i> Kubernetes</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-salesforce"></i> Salesforce Consulting</div>
+                    <!-- Duplicate for infinite loop -->
+                    <div class="marquee-logo"><i class="fa-brands fa-aws"></i> AWS Cloud Partner</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-microsoft"></i> Microsoft Solutions</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-google"></i> Google Cloud</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-docker"></i> Docker Enterprise</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-kubernetes"></i> Kubernetes</div>
+                    <div class="marquee-logo"><i class="fa-brands fa-salesforce"></i> Salesforce Consulting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">OUR SERVICES</span>
+                <h2 class="section-title">IT Solutions Engineered For Growth</h2>
+                <p class="section-subtitle">
+                    We deliver comprehensive, security-first IT services that enable your organization to scale
+                    efficiently and stay resilient.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1: Website Development -->
+                <div class="service-card" id="serviceCard1">
+                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3 class="service-card-title">Website Development</h3>
+                    <p class="service-card-text">
+                        High-performance, SEO-optimised websites and web portals crafted with modern frameworks,
+                        designed to convert visitors into loyal customers.
+                    </p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check"></i> React & Next.js Development</li>
+                        <li><i class="fa-solid fa-check"></i> Responsive UI/UX Design</li>
+                        <li><i class="fa-solid fa-check"></i> CMS & E-commerce Solutions</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2: Mobile Application -->
+                <div class="service-card" id="serviceCard2">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3 class="service-card-title">Mobile Application</h3>
+                    <p class="service-card-text">
+                        Native and cross-platform mobile apps for iOS and Android, engineered for seamless user
+                        experience and peak performance on all devices.
+                    </p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check"></i> React Native & Flutter</li>
+                        <li><i class="fa-solid fa-check"></i> iOS & Android Deployment</li>
+                        <li><i class="fa-solid fa-check"></i> Push Notifications & Offline Mode</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3: AI & Data Analytics -->
+                <div class="service-card" id="serviceCard3">
+                    <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="service-card-title">AI & Data Analytics</h3>
+                    <p class="service-card-text">
+                        Integrate intelligent machine learning models and big data processing pipelines to unlock
+                        hidden business insights and automate decision-making.
+                    </p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check"></i> Predictive & Generative AI Models</li>
+                        <li><i class="fa-solid fa-check"></i> PowerBI & Tableau Dashboards</li>
+                        <li><i class="fa-solid fa-check"></i> Data Pipeline Engineering</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 4: Custom Software -->
+                <div class="service-card" id="serviceCard4">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="service-card-title">Custom Software</h3>
+                    <p class="service-card-text">
+                        Bespoke enterprise software solutions — from ERP systems to SaaS platforms — built precisely to
+                        your workflow requirements with scalable architecture.
+                    </p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check"></i> ERP & CRM Development</li>
+                        <li><i class="fa-solid fa-check"></i> API Integration & Microservices</li>
+                        <li><i class="fa-solid fa-check"></i> Legacy System Modernisation</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 5: Cyber Security & SOC -->
+                <div class="service-card" id="serviceCard5">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="service-card-title">Cyber Security & SOC</h3>
+                    <p class="service-card-text">
+                        24/7 Security Operations Centre monitoring, penetration testing, compliance auditing, and
+                        rapid incident response to keep your business protected.
+                    </p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check"></i> SOC 24/7 Threat Monitoring</li>
+                        <li><i class="fa-solid fa-check"></i> Zero Trust Architecture</li>
+                        <li><i class="fa-solid fa-check"></i> Penetration Testing & Audits</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 6: Secure Data Wiping -->
+                <div class="service-card" id="serviceCard6">
+                    <div class="service-icon"><i class="fa-solid fa-hard-drive"></i></div>
+                    <h3 class="service-card-title">Secure Data Wiping for IT Assets</h3>
+                    <p class="service-card-text">
+                        Certified, GDPR-compliant permanent data destruction for retired IT hardware — hard drives,
+                        SSDs, servers, and mobile devices — with full audit trail certification.
+                    </p>
+                    <ul class="service-points">
+                        <li><i class="fa-solid fa-check"></i> NIST 800-88 / DoD 5220.22-M Standard</li>
+                        <li><i class="fa-solid fa-check"></i> Certificate of Data Destruction</li>
+                        <li><i class="fa-solid fa-check"></i> On-site & Remote Wiping Services</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Consult Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="about-section" id="about">
+        <div class="container grid-2">
+            <div class="about-graphics">
+                <div class="glowing-accent-box">
+                    <div class="glass-feature-box">
+                        <i class="fa-solid fa-users-gear feature-box-icon"></i>
+                        <h4>100% Certified UK Engineers</h4>
+                        <p>No outsourcing. Our UK support desk is staffed by qualified professionals ready to solve
+                            issues instantly.</p>
+                    </div>
+                    <div class="glass-feature-box secondary">
+                        <i class="fa-solid fa-shield-halved feature-box-icon"></i>
+                        <h4>SLA-Backed Services</h4>
+                        <p>We stand by our words. Our contracts are backed by robust financial SLAs for maximum business
+                            uptime.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <span class="exp-num">12+</span>
+                    <span class="exp-text">Years of Excellence in UK IT Landscape</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="section-tagline">WHY PARTNER WITH US</span>
+                <h2 class="section-title">Your Strategic Technology Partner</h2>
+                <p class="section-description">
+                    We understand that technology should be an accelerator, not a bottleneck. At UK InfoTech, we
+                    align IT infrastructure directly with your commercial goals.
+                </p>
+
+                <div class="accordion">
+                    <div class="accordion-item active" id="accItem1">
+                        <div class="accordion-header" onclick="toggleAccordion('accItem1')">
+                            <h5><span class="acc-icon"><i class="fa-solid fa-rocket"></i></span> Rapid Incident
+                                Resolution</h5>
+                            <span class="acc-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Our durchschnitt helpdesk answer time is under 45 seconds, with a guaranteed engineer
+                                response within 15 minutes. We resolve over 85% of queries on the first contact.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="accItem2">
+                        <div class="accordion-header" onclick="toggleAccordion('accItem2')">
+                            <h5><span class="acc-icon"><i class="fa-solid fa-lock"></i></span> Security-First Approach
+                            </h5>
+                            <span class="acc-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>Every solution we design, from a simple cloud migration to complex software, is layered
+                                with military-grade encryption and threat detection systems adhering to Cyber Essentials
+                                Plus standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="accItem3">
+                        <div class="accordion-header" onclick="toggleAccordion('accItem3')">
+                            <h5><span class="acc-icon"><i class="fa-solid fa-scale-balanced"></i></span> Dynamic
+                                Scalability</h5>
+                            <span class="acc-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-body">
+                            <p>We build architectures that grow with you. Easily scale up compute power, storage, or
+                                development teams as your enterprise gains momentum, with zero disruption.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Filter Section -->
+    <section class="tech-section" id="tech-stack">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">OUR TECH EXPERTISE</span>
+                <h2 class="section-title">Leveraging Industry-Leading Technologies</h2>
+                <p class="section-subtitle">
+                    We work with modern, secure, and industry-standard tech tools to build future-proof infrastructures
+                    and platforms.
+                </p>
+            </div>
+
+            <div class="tech-tabs-container">
+                <div class="tech-tabs">
+                    <button class="tech-tab-btn active" onclick="filterTech('all')">All Tech</button>
+                    <button class="tech-tab-btn" onclick="filterTech('cloud')">Cloud & DevOps</button>
+                    <button class="tech-tab-btn" onclick="filterTech('frontend')">Frontend</button>
+                    <button class="tech-tab-btn" onclick="filterTech('backend')">Backend</button>
+                    <button class="tech-tab-btn" onclick="filterTech('security')">Security & Data</button>
+                </div>
+
+                <div class="tech-grid" id="techGrid">
+                    <!-- Tech Item -->
+                    <div class="tech-card" data-category="cloud">
+                        <i class="fa-brands fa-aws tech-card-icon aws"></i>
+                        <h6>AWS</h6>
+                        <span class="tech-type">Cloud Services</span>
+                    </div>
+                    <div class="tech-card" data-category="frontend">
+                        <i class="fa-brands fa-react tech-card-icon react"></i>
+                        <h6>React.js</h6>
+                        <span class="tech-type">Library</span>
+                    </div>
+                    <div class="tech-card" data-category="backend">
+                        <i class="fa-brands fa-node-js tech-card-icon node"></i>
+                        <h6>Node.js</h6>
+                        <span class="tech-type">Runtime</span>
+                    </div>
+                    <div class="tech-card" data-category="cloud">
+                        <i class="fa-brands fa-docker tech-card-icon docker"></i>
+                        <h6>Docker</h6>
+                        <span class="tech-type">Containers</span>
+                    </div>
+                    <div class="tech-card" data-category="backend">
+                        <i class="fa-brands fa-python tech-card-icon python"></i>
+                        <h6>Python</h6>
+                        <span class="tech-type">Programming</span>
+                    </div>
+                    <div class="tech-card" data-category="frontend">
+                        <i class="fa-brands fa-js tech-card-icon js"></i>
+                        <h6>ES6 JavaScript</h6>
+                        <span class="tech-type">Language</span>
+                    </div>
+                    <div class="tech-card" data-category="security">
+                        <i class="fa-solid fa-shield-halved tech-card-icon security"></i>
+                        <h6>SOC 2 / ISO</h6>
+                        <span class="tech-type">Compliance</span>
+                    </div>
+                    <div class="tech-card" data-category="security">
+                        <i class="fa-solid fa-database tech-card-icon postgres"></i>
+                        <h6>PostgreSQL</h6>
+                        <span class="tech-type">Database</span>
+                    </div>
+                    <div class="tech-card" data-category="cloud">
+                        <i class="fa-solid fa-server tech-card-icon terraform"></i>
+                        <h6>Terraform</h6>
+                        <span class="tech-type">Infrastructure</span>
+                    </div>
+                    <div class="tech-card" data-category="security">
+                        <i class="fa-solid fa-chart-pie tech-card-icon bi"></i>
+                        <h6>PowerBI</h6>
+                        <span class="tech-type">Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies / Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">CASE STUDIES</span>
+                <h2 class="section-title">Featured Projects We've Built</h2>
+                <p class="section-subtitle">
+                    Real-world applications crafted with precision — from fully-functional ad platforms to large-scale
+                    e-commerce clones. Explore our live work.
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1: Ad Agency Portal -->
+                <div class="portfolio-card" id="portCard1">
+                    <div class="portfolio-image-box ad-agency-box">
+                        <div class="portfolio-tag">Web Application</div>
+                        <div class="portfolio-icon-display">
+                            <i class="fa-solid fa-bullhorn portfolio-proj-icon"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="https://ad-agency-portal.vercel.app/" target="_blank" rel="noopener"
+                                class="portfolio-overlay-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <span class="client-name">Full-Stack Web Application</span>
+                        <h4 class="portfolio-card-title">Ad Agency Portal — Complete Advertising Management Platform
+                        </h4>
+                        <p class="portfolio-card-text">
+                            A fully functional, end-to-end ad agency management platform built for modern digital
+                            marketing teams. The portal enables agencies to create, manage, and publish professional
+                            ad templates in real-time, streamlining campaign workflows from brief to delivery.
+                            Key capabilities include a drag-and-drop ad template builder, client onboarding
+                            dashboard, campaign analytics, and a multi-role user system supporting agency staff,
+                            clients, and administrators — all with live preview rendering.
+                        </p>
+                        <div class="portfolio-impact">
+                            <div class="impact-stat">
+                                <span class="impact-val">100%</span>
+                                <span class="impact-lbl">Functional</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-val">Live</span>
+                                <span class="impact-lbl">On Vercel</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-val">Multi</span>
+                                <span class="impact-lbl">Role System</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-action-btns">
+                            <a href="https://ad-agency-portal.vercel.app/" target="_blank" rel="noopener"
+                                class="btn-port-action btn-port-preview" id="adAgencyLiveBtn">
+                                <i class="fa-solid fa-eye"></i> Live Preview
+                            </a>
+                            <a href="https://github.com/kaushal-devloper/" target="_blank" rel="noopener"
+                                class="btn-port-action btn-port-github" id="adAgencyGithubBtn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Myntra Clone -->
+                <div class="portfolio-card" id="portCard2">
+                    <div class="portfolio-image-box myntra-box">
+                        <div class="portfolio-tag">E-Commerce Clone</div>
+                        <div class="portfolio-icon-display">
+                            <i class="fa-solid fa-bag-shopping portfolio-proj-icon"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="https://myntra-clone-nu-dusky.vercel.app/" target="_blank" rel="noopener"
+                                class="portfolio-overlay-link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Live
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <span class="client-name">Frontend Web Application</span>
+                        <h4 class="portfolio-card-title">Myntra Clone — Full-Featured Fashion E-Commerce Web App</h4>
+                        <p class="portfolio-card-text">
+                            A feature-rich Myntra-inspired fashion e-commerce application replicating the core
+                            shopping experience at scale. Built with React.js, the app features a responsive
+                            product catalogue with advanced category filters, a fully functional shopping cart
+                            with quantity management, wishlist functionality, product detail pages, and a
+                            seamless multi-step checkout flow — demonstrating production-level front-end
+                            architecture and component design patterns.
+                        </p>
+                        <div class="portfolio-impact">
+                            <div class="impact-stat">
+                                <span class="impact-val">React</span>
+                                <span class="impact-lbl">Frontend</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-val">Live</span>
+                                <span class="impact-lbl">Deployed</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-val">Full</span>
+                                <span class="impact-lbl">Cart & Wishlist</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-action-btns">
+                            <a href="https://myntra-clone-nu-dusky.vercel.app/" target="_blank" rel="noopener"
+                                class="btn-port-action btn-port-preview" id="myntraLiveBtn">
+                                <i class="fa-solid fa-eye"></i> Live Preview
+                            </a>
+                            <a href="https://github.com/kaushal-devloper/" target="_blank" rel="noopener"
+                                class="btn-port-action btn-port-github" id="myntraGithubBtn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonial-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tagline">CLIENT SATISFACTION</span>
+                <h2 class="section-title">What Our UK Partners Say</h2>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">
+                            "UK InfoTech overhauled our security configuration and helped us move to AWS
+                            flawlessly. Their team operates with absolute transparency and speed. Highly recommended for
+                            any serious UK business."
+                        </p>
+                        <div class="client-details">
+                            <div class="client-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="client-info">
+                                <h5>Richard Henderson</h5>
+                                <span>CTO, Lumina Finance Ltd</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">
+                            "Their 24/7 UK helpdesk support has been life-changing. Whenever a ticket is raised, it's
+                            picked up within minutes by someone who actually knows how to solve the problem. Excellent
+                            SLAs!"
+                        </p>
+                        <div class="client-details">
+                            <div class="client-avatar"><i class="fa-solid fa-user-nurse"></i></div>
+                            <div class="client-info">
+                                <h5>Sarah Jenkins</h5>
+                                <span>Operations Director, Apex Healthcare</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="testimonial-quote">
+                            "The development team built our telehealth patient portal faster than we thought possible.
+                            Clean code, beautiful UI design, and meticulous GDPR documentation. True professionals."
+                        </p>
+                        <div class="client-details">
+                            <div class="client-avatar"><i class="fa-solid fa-user-gears"></i></div>
+                            <div class="client-info">
+                                <h5>James Sterling</h5>
+                                <span>MD, Veloce Logistics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prevSlide" aria-label="Previous Slide"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                    </div>
+                    <button class="slider-btn next-btn" id="nextSlide" aria-label="Next Slide"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container grid-2">
+            <div class="contact-info-block">
+                <span class="section-tagline">GET IN TOUCH</span>
+                <h2 class="section-title">Ready to Elevate Your Technology?</h2>
+                <p class="section-description">
+                    Reach out today for a complimentary IT infrastructure audit. Our UK engineers will assess your
+                    network vulnerabilities, cloud costs, and system performance at zero cost.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="contact-method-item">
+                        <span class="method-icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="method-body">
+                            <h5>Headquarters</h5>
+                            <p>Navsari , Gujarat , India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method-item">
+                        <span class="method-icon"><i class="fa-solid fa-phone-volume"></i></span>
+                        <div class="method-body">
+                            <h5>Call Support</h5>
+                            <p>+91 0000000000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method-item">
+                        <span class="method-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
+                        <div class="method-body">
+                            <h5>Email Address</h5>
+                            <p>nikonlinemarket@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-container">
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-block">
+                <form class="contact-form" id="itContactForm" onsubmit="handleFormSubmit(event)" novalidate>
+                    <h3 class="form-title">Request a Paid IT Consultation</h3>
+
+                    <!-- Alert message container for submission status -->
+                    <div class="form-alert-banner" id="formAlertBanner" role="alert" style="display: none;"></div>
+
+                    <div class="form-row">
+                        <div class="form-group" id="groupName">
+                            <label for="contactName">Your Name *</label>
+                            <input type="text" id="contactName" name="name" placeholder="First and last name" required>
+                            <span class="field-error" id="nameError"></span>
+                        </div>
+                        <div class="form-group" id="groupEmail">
+                            <label for="contactEmail">Business Email *</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="example@company.com"
+                                required>
+                            <span class="field-error" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group" id="groupPhone">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="+91 0000000000">
+                            <span class="field-error" id="phoneError"></span>
+                        </div>
+                        <div class="form-group" id="groupService">
+                            <label for="contactService">Required Service *</label>
+                            <select id="contactService" name="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Mobile Application">Mobile Application</option>
+                                <option value="AI & Data Analytics">AI & Data Analytics</option>
+                                <option value="Custom Software">Custom Software</option>
+                                <option value="Cyber Security & SOC">Cyber Security & SOC</option>
+                                <option value="Secure Data Wiping for IT Assets">Secure Data Wiping for IT Assets
+                                </option>
+                                <option value="Other / Consultancy">Other / Consultancy</option>
+                            </select>
+                            <span class="field-error" id="serviceError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group" id="groupMessage">
+                        <label for="contactMessage">Briefly describe your requirements *</label>
+                        <textarea id="contactMessage" name="message" rows="4"
+                            placeholder="Tell us about your IT setup and goals..." required></textarea>
+                        <span class="field-error" id="messageError"></span>
+                    </div>
+                    <div class="form-checkbox" id="groupConsent">
+                        <input type="checkbox" id="contactConsent" required>
+                        <label for="contactConsent">I agree to the <a href="#">Privacy Policy</a> and authorize UK InfoTech to contact me.</label>
+                        <span class="field-error" id="consentError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                        Submit Audit Request <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h4 class="modal-title">Request Received Successfully!</h4>
+            <p class="modal-description">
+                Thank you for contacting UK InfoTech. One of our London-based Solutions Architects will review
+                your details and reach out within 15 minutes.
+            </p>
+            <button class="btn btn-primary" onclick="closeModal()">Close Window</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-cubes-stacked"></i></span>
+                    <span class="logo-text">UK <span class="logo-highlight">InfoTech</span></span>
+                </a>
+                <p class="footer-description">
+                    Empowering enterprises in the UK and globally with resilient IT support, robust cyber defenses, and
+                    innovative custom developments.
+                </p>
+                <p class="office-hours"><i class="fa-regular fa-clock"></i> Support: 24/7/365 | Office: 9AM - 6PM GMT
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="footer-col-title">Services</h5>
+                <ul class="footer-links">
+                    <li><a href="#services">Cloud Infrastructure</a></li>
+                    <li><a href="#services">Cyber Security & Compliance</a></li>
+                    <li><a href="#services">Bespoke Software Engineering</a></li>
+                    <li><a href="#services">24/7 Managed IT Support</a></li>
+                    <li><a href="#services">Data Systems & AI Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 class="footer-col-title">Company</h5>
+                <ul class="footer-links">
+                    <li><a href="#about">Why Choose Us</a></li>
+                    <li><a href="#tech-stack">Technology Stack</a></li>
+                    <li><a href="#portfolio">Our Success Stories</a></li>
+                    <li><a href="#">Privacy & GDPR Policy</a></li>
+                    <li><a href="#">Terms & SLA Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h5 class="footer-col-title">Subscribe to tech insights</h5>
+                <p>Stay ahead with bi-weekly updates on cyber security vulnerabilities, cloud cost tips, and tech news.
+                </p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Your Email Address" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 UK InfoTech Ltd. Registered in England & Wales. Company No. 12948123. All Rights
+                    Reserved.</p>
+                <div class="bottom-links">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Security Advisory</a>
+                    <a href="#">Report Vulnerability</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
